@@ -1,2 +1,4 @@
 ---
 # defaults file for kubectl_apply
+kubectl_apply:
+  filename: example_filename.yaml
