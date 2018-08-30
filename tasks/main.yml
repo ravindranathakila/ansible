@@ -1,2 +1,7 @@
 ---
 # tasks file for docker_run
+# https://docs.ansible.com/ansible/latest/modules/docker_container_module.html
+- name: Create a data container
+  docker_container:
+    name: "{{ docker_run.name }}"
+    image: "{{ docker_run.image }}"

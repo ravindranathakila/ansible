@@ -1,2 +1,5 @@
 ---
 # defaults file for docker_run
+docker_run:
+  name: example_name
+  image: example_image
