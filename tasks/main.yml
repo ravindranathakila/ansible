@@ -1,3 +1,4 @@
 ---
 # tasks file for docker_build
-- command: "docker build -t {{ docker_build.name_prefix }}{{ docker_build.name }} {{ playbook_dir }}/{{ docker_build.path }}"
+- name: "Building {{ docker_build.name }} and tagging with {{ docker_build.name_prefix }}{{ docker_build.name }}"
+  command: "docker build -t {{ docker_build.name_prefix }}{{ docker_build.name }} {{ playbook_dir }}/{{ docker_build.path }}"
