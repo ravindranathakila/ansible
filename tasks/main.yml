@@ -1,6 +1,3 @@
 ---
 # tasks file for docker_build
-- name: Createing container
-  docker_container:
-    name: "{{ docker_build.name }}"
-    state: present
+- command: "docker build -t {{ docker_build.name_prefix }}{{ docker_build.name }} {{ playbook_dir }}/{{ docker_build.path }}"
