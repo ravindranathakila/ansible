@@ -1,2 +1,7 @@
 ---
 # tasks file for docker_build
+- name: Createing container
+  docker_container:
+    name: "{{ docker_build.name }}"
+    image: "{{ docker_build.image }}"
+    state: present
