@@ -1,4 +1,4 @@
 ---
 # tasks file for docker_push
-- name: "Pushing tag {{ docker_push.tag }}
+- name: "Pushing tag {{ docker_push.tag }}"
   command: "docker push {{ docker_push.tag }}"
