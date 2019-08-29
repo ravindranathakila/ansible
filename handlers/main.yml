@@ -1,3 +1,2 @@
 ---
-# tasks file for gcloud_endpoints_services_deploy
-- command: gcloud endpoints services deploy {{ gcloud_endpoints_services_deploy.pb }} {{ gcloud_endpoints_services_deploy.service_config_file }}
+# handlers file for gcloud_endpoints_services_deploy
